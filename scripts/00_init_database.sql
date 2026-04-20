@@ -5,7 +5,11 @@ Create Database and Schemas
 Script Purpose:
     This script creates a new database named 'DataWarehouseAnalytics' after checking if it already exists. 
     If the database exists, it is dropped and recreated. Additionally, this script creates a schema called gold
-	
+
+Data Source:
+	Data was extracted from an existing database 'DataWarehouse' and loaded into 
+	a new database 'DataWarehouseAnalytics' for analytics and reporting. 
+
 WARNING:
     Running this script will drop the entire 'DataWarehouseAnalytics' database if it exists. 
     All data in the database will be permanently deleted. Proceed with caution 
@@ -38,6 +42,7 @@ GO
 
 -- create Tables
 -- checking and dropping any table with similar name
+	
 IF OBJECT_ID('gold.dim_customers', 'U') IS NOT NULL
 	DROP TABLE gold.dim_customers;
 GO
@@ -103,6 +108,7 @@ GO
 INSERT INTO DataWarehouseAnalytics.gold.dim_customers
 SELECT *
 FROM DataWarehouse.gold.dim_customers;
+GO
 
 -- ==============================================
 -- Truncate and Insert gold.dim_products data
@@ -114,7 +120,7 @@ GO
 INSERT INTO DataWarehouseAnalytics.gold.dim_products
 SELECT *
 FROM DataWarehouse.gold.dim_products;
-
+GO
 
 -- ==============================================
 -- Truncate and Insert gold.fact_sales data
@@ -126,5 +132,7 @@ GO
 INSERT INTO DataWarehouseAnalytics.gold.fact_sales
 SELECT *
 FROM DataWarehouse.gold.fact_sales;
+GO
 
-select * from gold.fact_sales
+SELECT * FROM gold.fact_sales;
+GO
