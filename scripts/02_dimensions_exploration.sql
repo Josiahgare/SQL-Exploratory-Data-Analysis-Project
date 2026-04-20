@@ -1,9 +1,13 @@
--- ==============================
--- 2.	Dimension Exploration
--- ==============================
--- Identifying the unique values (or categories) in each dimension. Helps to recognze howthe data might be 
+/* 
+================================================================
+Dimension Exploration
+================================================================
+Identifying the unique values (or categories) in each dimension. 
+Helps to recognze how the data might be 
 -- grouped or segmented,which is useful for later analysis. 
--- Formula: DISTINCT[dimension]
+Formula: DISTINCT[dimension]
+================================================================
+*/
 
 -- Explore all the Countries our customers come from
 SELECT DISTINCT country FROM gold.dim_customers;
