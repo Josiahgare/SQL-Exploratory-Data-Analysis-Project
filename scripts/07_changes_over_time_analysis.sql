@@ -36,3 +36,16 @@ WHERE order_date IS NOT NULL
 GROUP BY DATETRUNC(month, order_date)
 ORDER BY DATETRUNC(month, order_date);
 GO
+
+-- -----------------------------------------------------------------
+-- How many new customers were added each year
+-- -----------------------------------------------------------------
+
+SELECT 
+	DATETRUNC(year, order_date) AS order_year,
+	COUNT(DISTINCT customer_key) AS total_customers
+FROM gold.fact_sales
+WHERE DATETRUNC(year, order_date) IS NOT NULL
+GROUP BY DATETRUNC(year, order_date)
+ORDER BY DATETRUNC(year, order_date);
+GO
