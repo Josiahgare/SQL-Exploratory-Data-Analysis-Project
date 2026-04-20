@@ -4,7 +4,7 @@ Building Product Report
 ==================================================================================================
 Purpose:
 	- This report consolidates key Product metrics and behaviors and stores it as a VIEW table
-	  in the previous database 'DataWarehouse' and current database 'DataWarehouseAnalytics'
+	  in the previous database 'DataWarehouse' and current database 'DataWarehouseAnalytics'.
 
 Highlights:
 	1.	Gathers essential fields such as Product names, category, subcategory, and cost.
