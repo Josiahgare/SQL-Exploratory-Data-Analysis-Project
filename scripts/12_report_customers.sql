@@ -4,6 +4,7 @@ Building Customer Report
 ==================================================================================================
 Purpose:
 	- This report consolidates key customer metrics and behaviors and stores it as a VIEW table
+	  in the previous database 'DataWarehouse' and current database 'DataWarehouseAnalytics'.
 
 Highlights:
 	1.	Gathers essential fields such as names, age, and transaction details.
