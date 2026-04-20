@@ -11,7 +11,7 @@ This project is licensed under the [MIT License](https://github.com/Josiahgare/S
 ---
 
 ### 🌟 About Me
-Hi there! I'm **Josiah Oghenegare Obarhuakpor**, also known as **Joo**. I’m a dedicated **Data Engineer** who likes to ensure that the soul of the business remains intact and functions optimally 24/7.
+Hi there! I'm **Josiah Oghenegare Obarhuakpor**, also known as **Joo**. I’m a dedicated **Data professional** focused on building reliable data systems that keep businesses running efficiently. I specialize in transforming raw data into structured, high-quality datasets through ETL processes, data modeling, and warehouse design. I’m passionate about creating scalable data solutions that enable consistent, insight-driven growth.
 
 Let's stay in touch! Feel free to connect with me on the following platforms:
 
